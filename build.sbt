@@ -4,7 +4,7 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.10.3"
 
 libraryDependencies ++= Seq(
   jdbc,
@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
   ws,
   specs2 % Test
 )
+
+libraryDependencies += "org.sorm-framework" % "sorm" % "0.3.15"
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 
