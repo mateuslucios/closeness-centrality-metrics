@@ -14,6 +14,10 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += "org.sorm-framework" % "sorm" % "0.3.15"
+libraryDependencies += "com.typesafe.slick" %% "slick" % "3.0.0"
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.+"
+//libraryDependencies += "org.slf4j" % "slf4j-nop" % "1.6.4"
+
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 
